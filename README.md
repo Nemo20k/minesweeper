@@ -11,3 +11,5 @@ git clone https://github.com/Nemo20k/minesweeper.git
 ```
 python3 ./minesweeper/minesweeper.py <board_size> <num_of_mines>
 ```
+
+![plot](./screen_capture.png)
