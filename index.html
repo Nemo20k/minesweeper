@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+
+      .board {
+        display: flex;
+        flex-direction: column;
+        background-color: #ddd;
+        border: 2px solid #999;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .cell {
+        width: 20px;
+        height: 20px;
+        background-color: #ccc;
+        border: 1px solid #999;
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .cell.mine {
+        background-color: #f00;
+        color: #fff;
+      }
+
+      .cell.revealed {
+        background-color: #fff;
+        border: 1px solid #ccc;
+      }
+
+      .cell.revealed.mine {
+        background-color: #f00;
+        color: #fff;
+        border: 1px solid #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--<script src="game-board.js"></script>-->
+    <div class="board"><div class="row"><div class="cell"></div></div></div>
+  </body>
+</html>
